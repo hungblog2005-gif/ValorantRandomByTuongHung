@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant Team Randomizer - Professional Edition</title>
+    <meta name="description" content="Professional Valorant team randomizer tool. Create balanced teams with proper role distribution. Perfect for competitive play and casual matches.">
+    <meta name="keywords" content="Valorant, team randomizer, gaming tool, competitive gaming, team composition, FPS game">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+            <h1>VALORANT TEAM RANDOMIZER</h1>
+            <p class="subtitle">Professional Team Composition Tool</p>
+        </header>
+        
+        <div class="input-section">
+            <div class="section-header">
+                <h2>PLAYERS LIST</h2>
+                <div class="section-controls">
+                    <button id="shuffle-btn" class="btn-primary">SHUFFLE PLAYERS</button>
+                    <button id="randomize-btn" class="btn-primary">RANDOMIZE TEAM</button>
+                </div>
+            </div>
+            
+            <div class="input-container">
+                <textarea 
+                    id="player-list" 
+                    placeholder="Enter player names, one per line...&#10;Example:&#10;Player1&#10;Player2&#10;Player3&#10;Player4&#10;Player5"
+                    aria-label="Enter player names"
+                ></textarea>
+                
+                <div class="input-hints">
+                    <p class="hint">• Minimum 5 players required</p>
+                    <p class="hint">• Each player on a new line</p>
+                    <p class="hint">• All 4 roles guaranteed</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="results-section">
+            <div class="section-header">
+                <h2>TEAM COMPOSITION</h2>
+                <button id="export-btn" class="btn-secondary" title="Export team composition">EXPORT</button>
+            </div>
+            <div id="results-container"></div>
+        </div>
+        
+        <footer class="main-footer">
+            <p>© 2025 Valorant Team Randomizer | Professional Gaming Tool</p>
+            <p>Free to use for competitive and casual play</p>
+        </footer>
+    </div>
+    
+    <div id="loading-overlay" class="loading-overlay" style="display: none;">
+        <div class="spinner"></div>
+        <p>Randomizing team...</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
